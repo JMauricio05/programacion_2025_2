@@ -33,6 +33,101 @@ h1 {
     border-color: rgba(150, 0, 255, 0.5);
     border-style: dashed;
     border: 5px solid red;
+    border-radius: 16px;
+    border-left-color: #00f;
+    border-bottom-style: dashed;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 50%;
+    border-right-color: #000000;
+}
+
+.bg{
+    border: 1px solid #000000;
+    margin: 16px;
+    margin: 16px 25px;
+    margin: 16px 20px 24px 28px;
+    margin-block: 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-block-start: 60px;
+    margin-block-end: 40px;
+    margin-inline: 20px;
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-inline-start: 15px;
+    margin-inline-end: 25px;
+
+    padding: 32px;
+
+    width: 60vw;
+    height: 60vh;
+    background-color: #ff25ff;
+    background-image: url('../recursos/fondo.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 10px 25px;
+    box-shadow: 1px -5px 10px 6px #000000;
+}
+
+.boton {
+    width: 150px;
+    height: 80px;
+    background-color: #00f;
+    color: #fff;
+    transition-property: background-color, color, width;
+    transition-duration: 2s, 3s, 500ms;
+    transition-timing-function: linear;
+    transition-delay: 1s, 0s, 0s;
+}
+
+.boton:hover {
+    width: 250px;
+    background-color: #fff;
+    color: #000000;
+}
+
+.c1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #00f;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    animation-name: animacion1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animacion1{
+    /* from{
+        left: 0px;
+        background-color: #00f;
+    }
+    to{
+        left: 100vw;
+        background-color: #ff0000;
+    } */
+    0%{
+        left: 0px;
+        background-color: #00f;
+    }
+    25%{
+        top: 300px;
+    }
+    50%{
+        border-radius: 0px;
+        box-shadow: 1px 1px 5px 10px #000000;
+    }
+    75%{
+        height: 300px;
+    }
+    100%{
+        left: 100vw;
+        background-color: #ff0000;
+    }
 }
 
 
