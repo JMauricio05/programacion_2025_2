@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.circulo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.circulo.c1 {
+    background-color: #ff0000;
+}
+
+.circulo.c2 {
+    background-color: #00ff00;
+}
+
+.circulo.c3 {
+    background-color: #0000ff;
+}
+
+
+.float-content {
+    width: 80vw;
+    height: 90vh;
+    margin: 5vh auto;
+    border: 2px solid #000000;
+    position: relative;
+}
+
+.float-content .c1 {
+    /* position: relative; */
+    position: sticky;
+    top: 10px;
+    /* bottom: 0px; */
+    left: 100px;
+    /* right: 0px; */
+}
+
+.float-content .c2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.float-content .c3{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
