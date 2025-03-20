@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Docente</title>
+</head>
+<body>
+    <h1>Docentes</h1>
+    <form action="datosDocente.php" method="post">
+        <div>
+            <label>Nombre:</label>
+            <input name="nombre" type="text" maxlength="15" required>
+        </div>
+        <div>
+            <label>Apellido:</label>
+            <input name="apellido" type="text" maxlength="15" required>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input name="correo" type="email" maxlength="50">
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
