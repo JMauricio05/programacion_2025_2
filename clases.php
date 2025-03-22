@@ -11,6 +11,7 @@ abstract class Persona implements Model
     protected $nombre = null;
     private $apellido = null;
     private $email = null;
+    private $edad = null;
 
     abstract function toString();
 
@@ -28,6 +29,14 @@ abstract class Persona implements Model
     {
         $this->{$prop} = $value;
     }
+
+    function mayorEdad()
+    {
+        if ($this->edad >= 18) {
+            return 'Es mayor de edad';
+        }
+        return 'No es mayor de edad';
+    }
 }
 
 class Estudiante extends Persona
@@ -39,9 +48,14 @@ class Estudiante extends Persona
         $email = $this->get('email');
         return "$nombre $apellido $email";
     }
+
+    function setNombre($value){
+        $this->set('nombre', $value);
+    }
 }
 
-class Docente extends Persona{
+class Docente extends Persona
+{
 
     function __construct($nombre, $apellido)
     {
@@ -49,7 +63,7 @@ class Docente extends Persona{
         $this->set('apellido', $apellido);
         $this->set('email', "sin definir");
     }
-    
+
     function toString()
     {
         $nombre = $this->nombreCompleto();
