@@ -22,6 +22,7 @@ $persons = $controller->queryAllPersons();
 <body>
     <h1>Personas</h1>
     <br>
+    <a href="form_person.php">Crear</a>
     <table>
         <thead>
             <tr>
@@ -29,6 +30,7 @@ $persons = $controller->queryAllPersons();
                 <th>Email</th>
                 <th>Edad</th>
                 <th>Mayor edad</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -39,6 +41,10 @@ $persons = $controller->queryAllPersons();
                 echo '  <td>' . $person->get('email') . '</td>';
                 echo '  <td>' . $person->get('age') . '</td>';
                 echo '  <td>' . $person->mayorEdad() . '</td>';
+                echo '  <td>';
+                echo '      <a href="form_person.php?id=' . $person->get('id') . '">Modificar</a>';
+                echo '      <a href="acciones/deletePerson.php?id=' . $person->get('id') . '">Eliminar</a>';
+                echo '  </td>';
                 echo '</tr>';
             }
             ?>
