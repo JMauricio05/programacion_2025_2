@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Html</title>
+    <link rel="stylesheet" href="css/msg.css">
+</head>
+<body>
+    <h1 id="titulo">Hola mundo!!!</h1>
+    <br>
+
+    <form name="saludarForm">
+        <div>
+            <label id="nombreLb">Nombre:</label>
+            <input id="nmInput" type="text" name="nombre" onkeyup="nombreKeyUp()">
+            <p id="nombreError" style="display: none;">Campo obligatorio</p>
+        </div>
+        <button id="saludarBtn" type="button">Saludar</button>
+        <button type="submit">Saludar submit</button>
+    </form>
+
+
+    <script src="js/dom.js"></script>
+</body>
+</html>
