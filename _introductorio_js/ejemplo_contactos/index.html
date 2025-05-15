@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/contactos.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>Contactos</h1>
+        </header>
+        <section>
+            <button id="crearBtn">Crear</button>
+            <div class="modal cerrar-modal">
+                <form name="contactoForm">
+                    <button type="button" id="cerrarModal">X</button>
+                    <div>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" maxlength="50">
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" name="correo">
+                    </div>
+                    <div>
+                        <button>Guardar</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <table id="contactosTable">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">No hay datos...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/contactos.js"></script>
+</body>
+
+</html>

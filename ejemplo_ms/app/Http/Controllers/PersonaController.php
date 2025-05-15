@@ -24,6 +24,7 @@ class PersonaController extends Controller
     {
         $data = $request->all();
         $newPersona = new Persona();
+        $newPersona->id = $data['id'];
         $newPersona->nombre = $data['name'];
         $newPersona->email = $data['email'];
         $newPersona->edad = $data['age'];
