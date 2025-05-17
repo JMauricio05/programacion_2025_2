@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personas</title>
+    <link rel="stylesheet" href="css/personas.css">
 </head>
 <body>
     <section>
-        <div>
+        <div id="contentForm" class="contentForm">
             <form name="personasForm">
                 <div>
                     <label>Id:</label>
@@ -27,7 +28,7 @@
                 </div>
                 <div>
                     <button type="submit">Guardar</button>
-                    <button type="reset">Cancelar</button>
+                    <button type="reset" id="cancelarBtn">Cancelar</button>
                 </div>
             </form>
         </div>
@@ -36,7 +37,7 @@
                 <thead>
                     <tr>
                         <td colspan="5">
-                            <button>Crear</button>
+                            <button id="crearBtn">Crear</button>
                         </td>
                     </tr>
                     <tr>
@@ -50,16 +51,6 @@
                 <tbody>
                     <tr>
                         <td colspan="5">No hay datos</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Pepe</td>
-                        <td>pepe@test.com</td>
-                        <td>32</td>
-                        <td>
-                            <button>Modificar</button>
-                            <button>Eliminar</button>
-                        </td>
                     </tr>
                 </tbody>
             </table>
